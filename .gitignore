@@ -1,14 +1,3 @@
 # Secrets — never commit real API keys/tokens
 .env
 
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-
-# macOS
-.DS_Store
-
-# Generated output / media
-pictures-generated/
-india_post_mascot_final.pdf
