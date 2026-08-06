@@ -11,3 +11,6 @@ Verification
 - 52/52 pytest (phase1 + phase3) pass.
 - Full E2E on a plain prompt: success=True, overall_score 0.814, passed=True, image saved via pollinations (instance ml_only since tier-1 now passes, so no AI credits burned).
 Server restarted on port 8000 (PID 36722). Next you could try another prompt, or explore tuning the 0.7 pass threshold.
+----------------------------------------------------------------------------------------------------------------------------------------
+
+next simple prompt: make sure that external api entering should be in the front end
