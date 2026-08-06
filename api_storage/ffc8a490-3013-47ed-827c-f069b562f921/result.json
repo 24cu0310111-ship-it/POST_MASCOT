@@ -1,0 +1,29 @@
+{
+  "success": false,
+  "error": "Input context insufficient",
+  "iteration_count": 0,
+  "total_tokens_used": 0,
+  "total_time_ms": 0,
+  "analyzed_input": {
+    "raw_input": "Generate a friendly India Post mascot representing Trust & Reliability, Indian Culture and Digital Innovation. Modern Indian cartoon style, vibrant colors, square format, high quality.",
+    "intent": "generate_image",
+    "subject": "a friendly india post mascot representing trust & reliability, indian culture and digital innovation. modern indian cartoon style, vibrant colors, square format, high quality.",
+    "style": "cartoon, modern, indian, modern indian, vibrant",
+    "constraints": {},
+    "references": [],
+    "context_score": 0.6,
+    "missing_fields": []
+  },
+  "clarification_request": {
+    "missing_fields": [],
+    "questions": [
+      "Are there any specific constraints? (dimensions, colors, format)",
+      "Do you have any reference images or examples?"
+    ],
+    "suggestions": [
+      "Example: '1024x1024', 'red and gold colors', 'PNG format'",
+      "You can upload reference images or provide URLs"
+    ]
+  },
+  "task_id": "ffc8a490-3013-47ed-827c-f069b562f921"
+}

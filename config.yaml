@@ -1,0 +1,57 @@
+# Multi-Agent Orchestrator (MAO) Configuration
+
+# Phase 1: Input Analyzer Configuration
+phase1:
+  context_threshold: 0.7          # Minimum score to consider input sufficient
+  required_fields:              # Fields that must be present
+    - subject
+    - intent
+  optional_fields:              # Fields that improve quality but aren't required
+    - style
+    - constraints
+    - references
+  max_clarification_questions: 3  # Maximum questions to ask for clarification
+
+# Phase 2: Creator Agent Configuration
+phase2:
+  default_backend: "mcp"        # Default backend to use
+  max_retries: 3               # Maximum retries for generation
+  timeout_seconds: 300        # Timeout for generation in seconds
+  preferred_backends:         # Ordered list of preferred backends
+    - "mcp"
+    - "cli"
+    - "web_api"
+    - "local"
+  backend_configs:             # Configuration for each backend
+    mcp:
+      url: "https://mcp.orshot.com/mcp"
+      api_key_env: "OPENCODE_API_KEY"
+    web_api:
+      api_key_env: "OPENAI_API_KEY"
+      base_url: "https://api.openai.com/v1/images/generations"
+  track_costs: true           # Track cost estimation
+  max_cost_per_generation: 10.0  # Maximum cost per generation in USD
+
+# Phase 3: Quality Checker Configuration
+phase3:
+  enable_ml_validators: true   # Enable ML-based checks (zero tokens)
+  ml_checks:                  # ML checks to run
+    - "prompt_alignment"
+    - "artifact_detection"
+    - "technical_quality"
+    - "composition"
+  enable_ai_validators: true   # Enable AI-based checks (costs tokens)
+  ai_model: "omniroute:free-fast vision auto"  # AI model for Tier 2 checks
+  ai_checks:                  # AI checks to run
+    - "ai_quality"
+  pass_threshold: 0.7          # Minimum score to pass quality check
+  inconclusive_threshold: 0.5 # Score below which we consider a clear fail
+  max_iterations: 3           # Maximum refinement iterations
+  auto_refine: true           # Automatically refine without user input
+
+# General Configuration
+output_dir: "./output"         # Directory to save generated images
+storage_dir: "./storage"       # Directory for temporary storage
+log_level: "INFO"             # Logging level (DEBUG, INFO, WARNING, ERROR)
+debug: false                 # Enable debug mode
+keep_intermediate_files: true # Keep intermediate files (for debugging)

@@ -1,0 +1,1 @@
+{"prompt":"convert this pic paf:\n1. it should look like a manually made graphic design or make graphic design using this pic.\n2.automate the work and It must look like manually done.","references":[{"type":"file","path":"/api/download-reference/fa4ea22a-e01a-4a39-bc46-5d420a110603"}],"max_iterations":3,"backend":"mcp"}

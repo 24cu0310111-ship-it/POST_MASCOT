@@ -1,0 +1,125 @@
+{
+  "success": false,
+  "error": null,
+  "iteration_count": 0,
+  "total_tokens_used": 1,
+  "total_time_ms": 3932,
+  "analyzed_input": {
+    "raw_input": "create a friendly mascot for India Post in cartoon style with red and gold colors 1024x1024",
+    "intent": "generate_image",
+    "subject": "a friendly mascot for india post in cartoon style with red and gold colors 1024x1024",
+    "style": "cartoon",
+    "constraints": {
+      "width": 1024,
+      "height": 1024
+    },
+    "references": [],
+    "context_score": 0.8,
+    "missing_fields": []
+  },
+  "generation_result": {
+    "id": "27c86b7d-f078-4b05-869f-48a7f422a473",
+    "image_path": "output/mcp_bd348d5f_040737.png",
+    "image_url": null,
+    "backend_used": "mcp",
+    "model_version": "placeholder",
+    "generation_params": {
+      "prompt": "a friendly mascot for india post in cartoon style with red and gold colors 1024x1024 in cartoon style Characteristics to include: Trust & Reliability, Public Service, Inclusivity, Indian Culture & Heritage, Digital Innovation, Friendly Personality, Nationwide Connectivity",
+      "size": "1080x1080"
+    },
+    "generation_time_ms": 3837,
+    "cost_estimate": 0.0,
+    "prompt_used": "a friendly mascot for india post in cartoon style with red and gold colors 1024x1024 in cartoon style Characteristics to include: Trust & Reliability, Public Service, Inclusivity, Indian Culture & Heritage, Digital Innovation, Friendly Personality, Nationwide Connectivity",
+    "status": "completed",
+    "error": null,
+    "refinement_notes": [],
+    "metadata": {
+      "note": "No ORSHOT_API_KEY set \u2014 placeholder image generated. Set ORSHOT_API_KEY in .env for real generation.",
+      "mcp_server": "https://mcp.orshot.com/mcp"
+    }
+  },
+  "quality_report": {
+    "id": "49adfe84-91d1-4d39-9827-e5880dbbbe5f",
+    "overall_score": 0.6929309523809524,
+    "passed": false,
+    "tier_used": "ml+ai",
+    "ml_checks": [
+      {
+        "check_type": "prompt_alignment",
+        "score": 0.5,
+        "status": "skipped",
+        "details": {},
+        "issues": [
+          "CLIP not available"
+        ],
+        "confidence": 0.0
+      },
+      {
+        "check_type": "artifact_detection",
+        "score": 1.0,
+        "status": "passed",
+        "details": {
+          "edge_density": 0.02169322967529297,
+          "blur_score": 1245.6450233459473,
+          "anomaly_score": 0.0
+        },
+        "issues": [],
+        "confidence": 1.0
+      },
+      {
+        "check_type": "composition",
+        "score": 0.025775,
+        "status": "inconclusive",
+        "details": {
+          "composition_score": 0.025775
+        },
+        "issues": [],
+        "confidence": 0.5
+      },
+      {
+        "check_type": "technical_quality",
+        "score": 1.0,
+        "status": "passed",
+        "details": {
+          "image_info": {
+            "width": 1024,
+            "height": 1024,
+            "format": "PNG",
+            "mode": "RGB",
+            "size_bytes": 45894
+          },
+          "aspect_ratio": 1.0,
+          "blur_score": 1245.6450233459473
+        },
+        "issues": [],
+        "confidence": 1.0
+      }
+    ],
+    "ai_checks": [
+      {
+        "check_type": "ai_quality",
+        "score": 0.7,
+        "status": "passed",
+        "details": {
+          "original_check": "composition",
+          "ml_score": 0.025775,
+          "ai_score": 0.7,
+          "prompt": "Analyze: Composition. ML score: 0.03. Details: {\"composition_score\": 0.025775}. Image prompt: a friendly mascot for india post in cartoon style with red and gold colors 1024x1024 in cartoon style Characteristics to include: Trust & Reliability, Public Service, Inclusivity, Indian Culture & Heritage, Digital Innovation, Friendly Personality, Nationwide Connectivity. Rate the alignment from 0.0 to 1.0."
+        },
+        "issues": [
+          "AI resolved composition: score 0.70"
+        ],
+        "tokens_used": 1,
+        "model_used": "omniroute:free-fast vision auto"
+      }
+    ],
+    "tokens_consumed": 1,
+    "refinement_notes": [
+      "Improve overall quality and alignment with prompt"
+    ],
+    "iteration_count": 0,
+    "warnings": [],
+    "errors": []
+  },
+  "task_id": "897bf131-512e-42f3-905d-22a45e849efd"
+}

@@ -1,0 +1,49 @@
+# Multi-Agent Orchestrator (MAO) - Requirements
+# Requires Python >= 3.9
+
+# FastAPI and Web
+fastapi>=0.95.0
+uvicorn[standard]>=0.22.0
+python-multipart>=0.0.6
+pydantic>=1.10.0
+
+# Image Processing
+Pillow>=9.5.0
+opencv-python-headless>=4.7.0.72
+numpy>=1.24.0
+
+# ML Models (Optional)
+# CLIP for prompt alignment (optional)
+# clip @ git+https://github.com/openai/CLIP.git
+
+# Diffusers for local generation (optional)
+# torch>=2.0.0
+# diffusers>=0.18.0
+# transformers>=4.30.0
+
+# MCP Client (for Orshot backend)
+mcp>=1.0.0
+
+# Web API support
+aiohttp>=3.8.0
+requests>=2.31.0
+
+# For scikit-image (SSIM)
+# scikit-image>=0.20.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# Linting and Formatting
+ruff>=0.0.284
+mypy>=1.4.0
+
+# YAML support
+PyYAML>=6.0
+
+# For MediaPipe (optional)
+# mediapipe>=0.10.0
+
+# For EasyOCR (optional)
+# easyocr>=1.7.1

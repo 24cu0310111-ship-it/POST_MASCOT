@@ -1,0 +1,1 @@
+{"prompt":"convert this pic pdf:\n 1.it should look like a manually made graphic design or make graphic design using this pic .\n 2.automate the work and It must look like manually done.","references":[{"type":"file","path":"/api/download-reference/0ed7bd67-f3f7-424e-96a3-e05faf20a94b"}],"max_iterations":3,"backend":"mcp"}

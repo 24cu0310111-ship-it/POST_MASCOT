@@ -1,0 +1,36 @@
+{
+  "success": false,
+  "error": "No API key configured for MCP backend. Set ORSHOT_API_KEY in .env",
+  "iteration_count": 0,
+  "total_tokens_used": 0,
+  "total_time_ms": 0,
+  "analyzed_input": {
+    "raw_input": "generate a mascot for India Post in cartoon style 1024x1024",
+    "intent": "generate_image",
+    "subject": "a mascot for india post in cartoon style 1024x1024",
+    "style": "cartoon",
+    "constraints": {
+      "width": 1024,
+      "height": 1024
+    },
+    "references": [],
+    "context_score": 0.8,
+    "missing_fields": []
+  },
+  "generation_result": {
+    "id": "b8b14002-be50-4aec-aa85-0aa9f8d73e97",
+    "image_path": null,
+    "image_url": null,
+    "backend_used": "mcp",
+    "model_version": "",
+    "generation_params": {},
+    "generation_time_ms": 0,
+    "cost_estimate": 0.0,
+    "prompt_used": "a mascot for india post in cartoon style 1024x1024 in cartoon style Characteristics to include: Trust & Reliability, Public Service, Inclusivity, Indian Culture & Heritage, Digital Innovation, Friendly Personality, Nationwide Connectivity",
+    "status": "failed",
+    "error": "No API key configured for MCP backend. Set ORSHOT_API_KEY in .env",
+    "refinement_notes": [],
+    "metadata": {}
+  },
+  "task_id": "f2c14b9b-46f9-4331-a4f9-d2297b0017eb"
+}

@@ -1,0 +1,106 @@
+{
+  "success": true,
+  "error": null,
+  "iteration_count": 0,
+  "total_tokens_used": 0,
+  "total_time_ms": 8858,
+  "analyzed_input": {
+    "raw_input": "a cozy coffee shop interior with warm lighting and a barista mascot character",
+    "intent": "generate_image",
+    "subject": "cozy coffee shop interior with warm lighting and a barista mascot character",
+    "style": "light, warm",
+    "constraints": {},
+    "references": [],
+    "context_score": 1.0,
+    "missing_fields": []
+  },
+  "generation_result": {
+    "id": "a5829732-6603-4183-9afe-d2ec2aaa0c85",
+    "image_path": "api_storage/26d5a425-55ee-428f-8940-c62fb47e909d/pollinations_7c6ff418_050389.jpg",
+    "image_url": null,
+    "backend_used": "pollinations",
+    "model_version": "flux",
+    "generation_params": {
+      "prompt": "cozy coffee shop interior with warm lighting and a barista mascot character in light, warm style Characteristics to include: Trust & Reliability, Public Service, Inclusivity, Indian Culture & Heritage, Digital Innovation, Friendly Personality, Nationwide Connectivity",
+      "width": 1024,
+      "height": 1024,
+      "seed": 389633
+    },
+    "generation_time_ms": 3129,
+    "cost_estimate": 0.0,
+    "prompt_used": "cozy coffee shop interior with warm lighting and a barista mascot character in light, warm style Characteristics to include: Trust & Reliability, Public Service, Inclusivity, Indian Culture & Heritage, Digital Innovation, Friendly Personality, Nationwide Connectivity",
+    "status": "completed",
+    "error": null,
+    "refinement_notes": [],
+    "metadata": {
+      "source": "pollinations.ai",
+      "url": "https://image.pollinations.ai/prompt/cozy%20coffee%20shop%20interior%20with%20warm%20lighting%20and%20a%20barista%20mascot%20character%20in%20light,%20warm%20style%20Characteristics%20to%20include:%20Trust%20&%20Reliability,%20Public%20S?width=1024&height=1024&seed=389633&model=flux",
+      "note": "FREE generation - no API key required"
+    }
+  },
+  "quality_report": {
+    "id": "ab338acf-255d-44a0-87f5-37cf2e181d15",
+    "overall_score": 0.8135527616952434,
+    "passed": true,
+    "tier_used": "ml_only",
+    "ml_checks": [
+      {
+        "check_type": "prompt_alignment",
+        "score": 0.6382588893175125,
+        "status": "passed",
+        "details": {
+          "similarity_score": 0.276517778635025
+        },
+        "issues": [],
+        "confidence": 0.6382588893175125
+      },
+      {
+        "check_type": "artifact_detection",
+        "score": 0.9871539308221335,
+        "status": "passed",
+        "details": {
+          "edge_density": 0.019743177625868056,
+          "blur_score": 34.934135622448395,
+          "anomaly_score": 0.012846069177866423
+        },
+        "issues": [],
+        "confidence": 0.9743078616442671
+      },
+      {
+        "check_type": "composition",
+        "score": 0.6193375639651433,
+        "status": "passed",
+        "details": {
+          "composition_score": 0.6193375639651433
+        },
+        "issues": [],
+        "confidence": 0.5
+      },
+      {
+        "check_type": "technical_quality",
+        "score": 1.0,
+        "status": "passed",
+        "details": {
+          "image_info": {
+            "width": 768,
+            "height": 768,
+            "format": "JPEG",
+            "mode": "RGB",
+            "size_bytes": 51848
+          },
+          "aspect_ratio": 1.0,
+          "blur_score": 34.934135622448395
+        },
+        "issues": [],
+        "confidence": 1.0
+      }
+    ],
+    "ai_checks": [],
+    "tokens_consumed": 0,
+    "refinement_notes": [],
+    "iteration_count": 0,
+    "warnings": [],
+    "errors": []
+  },
+  "task_id": "26d5a425-55ee-428f-8940-c62fb47e909d"
+}

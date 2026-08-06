@@ -1,0 +1,36 @@
+{
+  "success": false,
+  "error": "Client error '401 Unauthorized' for url 'https://mcp.orshot.com/mcp'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401",
+  "iteration_count": 0,
+  "total_tokens_used": 0,
+  "total_time_ms": 0,
+  "analyzed_input": {
+    "raw_input": "create a friendly cartoon mascot for India Post wearing a khaki postal uniform with red accents, holding a letter and a smartphone, large expressive eyes, rounded shapes, vibrant colors, professional illustration style, white background, 1024x1024",
+    "intent": "generate_image",
+    "subject": "a friendly cartoon mascot for india post wearing a khaki postal uniform with red accents, holding a letter and a smartphone, large expressive eyes, rounded shapes, vibrant colors, professional illustr",
+    "style": "cartoon, illustration, vibrant",
+    "constraints": {
+      "width": 1024,
+      "height": 1024
+    },
+    "references": [],
+    "context_score": 0.8,
+    "missing_fields": []
+  },
+  "generation_result": {
+    "id": "c88ec009-94dc-4495-acd7-bf2d403d179d",
+    "image_path": null,
+    "image_url": null,
+    "backend_used": "mcp",
+    "model_version": "",
+    "generation_params": {},
+    "generation_time_ms": 1576,
+    "cost_estimate": 0.0,
+    "prompt_used": "a friendly cartoon mascot for india post wearing a khaki postal uniform with red accents, holding a letter and a smartphone, large expressive eyes, rounded shapes, vibrant colors, professional illustr in cartoon, illustration, vibrant style Characteristics to include: Trust & Reliability, Public Service, Inclusivity, Indian Culture & Heritage, Digital Innovation, Friendly Personality, Nationwide Connectivity",
+    "status": "failed",
+    "error": "Client error '401 Unauthorized' for url 'https://mcp.orshot.com/mcp'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401",
+    "refinement_notes": [],
+    "metadata": {}
+  },
+  "task_id": "dbb230a5-969f-4d4d-8860-315f08a1cc5f"
+}

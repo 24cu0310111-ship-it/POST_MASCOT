@@ -1,10 +1,15 @@
 import asyncio
-import os
 import json
+import os
+
 from mcp import ClientSession
 from mcp.client.sse import sse_client
 
-API_KEY = "os-uex53i0zc50adp6u5oxd60segu34v0"
+API_KEY = os.getenv("ORSHOT_API_KEY")
+if not API_KEY:
+    print("Error: ORSHOT_API_KEY environment variable not set.")
+    print("Add it to your .env file or export it before running this script.")
+    exit(1)
 MCP_URL = "https://mcp.orshot.com/mcp"
 OUTPUT_DIR = os.path.expanduser("~/Desktop/Post-mascot")
 

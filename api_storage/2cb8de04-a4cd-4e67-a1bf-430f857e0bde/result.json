@@ -1,0 +1,135 @@
+{
+  "success": false,
+  "error": null,
+  "iteration_count": 0,
+  "total_tokens_used": 1,
+  "total_time_ms": 40825,
+  "analyzed_input": {
+    "raw_input": "generate a red apple mascot character, friendly smiling face, 512x512, quality: photorealistic, colors: red green, aspect ratio 1:1, studio lighting, highly detailed",
+    "intent": "generate_image",
+    "subject": "a red apple mascot character, friendly smiling face, 512x512, quality: photorealistic, colors: red green, aspect ratio 1:1, studio lighting, highly detailed",
+    "style": "realistic, light",
+    "constraints": {
+      "width": 512,
+      "height": 512,
+      "aspect_ratio": "1:1",
+      "quality": [
+        "photorealistic"
+      ]
+    },
+    "references": [],
+    "context_score": 0.8,
+    "missing_fields": []
+  },
+  "generation_result": {
+    "id": "0f5bfbe1-042b-4c13-b7a5-94fd1ce0f682",
+    "image_path": "api_storage/2cb8de04-a4cd-4e67-a1bf-430f857e0bde/pollinations_856f6ed3_049904.jpg",
+    "image_url": null,
+    "backend_used": "pollinations",
+    "model_version": "flux",
+    "generation_params": {
+      "prompt": "a red apple mascot character, friendly smiling face, 512x512, quality: photorealistic, colors: red green, aspect ratio 1:1, studio lighting, highly detailed in realistic, light style aspect_ratio: 1:1 quality: ['photorealistic'] Characteristics to include: Trust & Reliability, Public Service, Inclusivity, Indian Culture & Heritage, Digital Innovation, Friendly Personality, Nationwide Connectivity",
+      "width": 1024,
+      "height": 1024,
+      "seed": 904472
+    },
+    "generation_time_ms": 2392,
+    "cost_estimate": 0.0,
+    "prompt_used": "a red apple mascot character, friendly smiling face, 512x512, quality: photorealistic, colors: red green, aspect ratio 1:1, studio lighting, highly detailed in realistic, light style aspect_ratio: 1:1 quality: ['photorealistic'] Characteristics to include: Trust & Reliability, Public Service, Inclusivity, Indian Culture & Heritage, Digital Innovation, Friendly Personality, Nationwide Connectivity",
+    "status": "completed",
+    "error": null,
+    "refinement_notes": [],
+    "metadata": {
+      "source": "pollinations.ai",
+      "url": "https://image.pollinations.ai/prompt/a%20red%20apple%20mascot%20character,%20friendly%20smiling%20face,%20512x512,%20quality:%20photorealistic,%20colors:%20red%20green,%20aspect%20ratio%201:1,%20studio%20lighting,%20highly%20detailed%20i?width=1024&height=1024&seed=904472&model=flux",
+      "note": "FREE generation - no API key required"
+    }
+  },
+  "quality_report": {
+    "id": "38e6352a-4b86-4e1a-9180-3f47bf394665",
+    "overall_score": 0.5428772377604774,
+    "passed": false,
+    "tier_used": "ml+ai",
+    "ml_checks": [
+      {
+        "check_type": "prompt_alignment",
+        "score": 0.6832898557186127,
+        "status": "passed",
+        "details": {
+          "similarity_score": 0.36657971143722534
+        },
+        "issues": [],
+        "confidence": 0.6832898557186127
+      },
+      {
+        "check_type": "artifact_detection",
+        "score": 0.991970714664587,
+        "status": "passed",
+        "details": {
+          "edge_density": 0.009967380099826388,
+          "blur_score": 19.444375001282122,
+          "anomaly_score": 0.008029285335412977
+        },
+        "issues": [],
+        "confidence": 0.9839414293291739
+      },
+      {
+        "check_type": "composition",
+        "score": 0.0164,
+        "status": "inconclusive",
+        "details": {
+          "composition_score": 0.0164
+        },
+        "issues": [],
+        "confidence": 0.5
+      },
+      {
+        "check_type": "technical_quality",
+        "score": 0.8,
+        "status": "failed",
+        "details": {
+          "image_info": {
+            "width": 768,
+            "height": 768,
+            "format": "JPEG",
+            "mode": "RGB",
+            "size_bytes": 35319
+          },
+          "aspect_ratio": 1.0,
+          "blur_score": 19.444375001282122
+        },
+        "issues": [
+          "Image appears blurry"
+        ],
+        "confidence": 1.0
+      }
+    ],
+    "ai_checks": [
+      {
+        "check_type": "ai_quality",
+        "score": 0.02,
+        "status": "failed",
+        "details": {
+          "original_check": "composition",
+          "ml_score": 0.0164,
+          "ai_score": 0.02,
+          "prompt": "Analyze: Composition. ML score: 0.02. Details: {\"composition_score\": 0.0164}. Image prompt: a red apple mascot character, friendly smiling face, 512x512, quality: photorealistic, colors: red green, aspect ratio 1:1, studio lighting, highly detailed in realistic, light style aspect_ratio: 1:1 quality: ['photorealistic'] Characteristics to include: Trust & Reliability, Public Service, Inclusivity, Indian Culture & Heritage, Digital Innovation, Friendly Personality, Nationwide Connectivity. Rate the alignment from 0.0 to 1.0."
+        },
+        "issues": [
+          "AI resolved composition: score 0.02"
+        ],
+        "tokens_used": 1,
+        "model_used": "omniroute:free-fast vision auto"
+      }
+    ],
+    "tokens_consumed": 1,
+    "refinement_notes": [
+      "technical_quality: Image appears blurry",
+      "AI check: AI resolved composition: score 0.02"
+    ],
+    "iteration_count": 0,
+    "warnings": [],
+    "errors": []
+  },
+  "task_id": "2cb8de04-a4cd-4e67-a1bf-430f857e0bde"
+}

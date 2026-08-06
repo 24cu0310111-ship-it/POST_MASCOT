@@ -1,0 +1,42 @@
+{
+  "success": false,
+  "error": "Quality check failed, user review required",
+  "iteration_count": 0,
+  "total_tokens_used": 0,
+  "total_time_ms": 45,
+  "analyzed_input": {
+    "raw_input": "generate a mascot for India Post in cartoon style 1024x1024",
+    "intent": "generate_image",
+    "subject": "a mascot for india post in cartoon style 1024x1024",
+    "style": "cartoon",
+    "constraints": {
+      "width": 1024,
+      "height": 1024
+    },
+    "references": [],
+    "context_score": 0.8,
+    "missing_fields": []
+  },
+  "generation_result": {
+    "id": "96c2ee1c-4d2a-4ca7-b893-37be70daa60c",
+    "image_path": "output/mcp_ba2b68bb_040741.png",
+    "image_url": null,
+    "backend_used": "mcp",
+    "model_version": "placeholder",
+    "generation_params": {
+      "prompt": "a mascot for india post in cartoon style 1024x1024 in cartoon style Characteristics to include: Trust & Reliability, Public Service, Inclusivity, Indian Culture & Heritage, Digital Innovation, Friendly Personality, Nationwide Connectivity",
+      "size": "1080x1080"
+    },
+    "generation_time_ms": 44,
+    "cost_estimate": 0.0,
+    "prompt_used": "a mascot for india post in cartoon style 1024x1024 in cartoon style Characteristics to include: Trust & Reliability, Public Service, Inclusivity, Indian Culture & Heritage, Digital Innovation, Friendly Personality, Nationwide Connectivity",
+    "status": "completed",
+    "error": null,
+    "refinement_notes": [],
+    "metadata": {
+      "note": "No ORSHOT_API_KEY set \u2014 placeholder image generated. Set ORSHOT_API_KEY in .env for real generation.",
+      "mcp_server": "https://mcp.orshot.com/mcp"
+    }
+  },
+  "task_id": "a39c9df9-5546-4e00-b483-6ed060eed001"
+}

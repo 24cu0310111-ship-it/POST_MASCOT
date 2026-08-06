@@ -1,0 +1,34 @@
+{
+  "success": false,
+  "error": "Input context insufficient",
+  "iteration_count": 0,
+  "total_tokens_used": 0,
+  "total_time_ms": 1,
+  "analyzed_input": {
+    "raw_input": "convert this pic paf:\n1. it should look like a manually made graphic design or make graphic design using this pic.\n2.automate the work and It must look like manually done.",
+    "intent": "generate_image",
+    "subject": "or make graphic design using this pic. 2.automate the",
+    "style": "graphic design",
+    "constraints": {},
+    "references": [
+      {
+        "type": "file",
+        "path": "/api/download-reference/204e166a-027d-4223-9e14-6b723fb1510a",
+        "url": null,
+        "content": null
+      }
+    ],
+    "context_score": 0.64,
+    "missing_fields": []
+  },
+  "clarification_request": {
+    "missing_fields": [],
+    "questions": [
+      "Are there any specific constraints? (dimensions, colors, format)"
+    ],
+    "suggestions": [
+      "Example: '1024x1024', 'red and gold colors', 'PNG format'"
+    ]
+  },
+  "task_id": "4fa29954-9e3a-4f91-a038-2d74184e0540"
+}

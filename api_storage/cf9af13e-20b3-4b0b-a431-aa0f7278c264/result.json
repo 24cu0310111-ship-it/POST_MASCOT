@@ -1,0 +1,126 @@
+{
+  "success": "True",
+  "error": null,
+  "iteration_count": 0,
+  "total_tokens_used": 1,
+  "total_time_ms": 8412,
+  "analyzed_input": {
+    "raw_input": "Generate a friendly India Post mascot representing Trust & Reliability, Indian Culture and Digital Innovation, 1024x1024 resolution, square format, modern Indian cartoon style",
+    "intent": "generate_image",
+    "subject": "a friendly india post mascot representing trust & reliability, indian culture and digital innovation, 1024x1024 resolution, square format, modern indian cartoon style",
+    "style": "cartoon, modern, indian, modern indian",
+    "constraints": {
+      "width": 1024,
+      "height": 1024
+    },
+    "references": [],
+    "context_score": 0.8,
+    "missing_fields": []
+  },
+  "generation_result": {
+    "id": "c418d28a-85c4-4e67-bd6e-8a1056a427da",
+    "image_path": "api_storage/cf9af13e-20b3-4b0b-a431-aa0f7278c264/pollinations_e92abb4b_047421.jpg",
+    "image_url": null,
+    "backend_used": "pollinations",
+    "model_version": "flux",
+    "generation_params": {
+      "prompt": "a friendly india post mascot representing trust & reliability, indian culture and digital innovation, 1024x1024 resolution, square format, modern indian cartoon style in cartoon, modern, indian, modern indian style Characteristics to include: Trust & Reliability, Public Service, Inclusivity, Indian Culture & Heritage, Digital Innovation, Friendly Personality, Nationwide Connectivity",
+      "width": 1024,
+      "height": 1024,
+      "seed": 421175
+    },
+    "generation_time_ms": 2083,
+    "cost_estimate": 0.0,
+    "prompt_used": "a friendly india post mascot representing trust & reliability, indian culture and digital innovation, 1024x1024 resolution, square format, modern indian cartoon style in cartoon, modern, indian, modern indian style Characteristics to include: Trust & Reliability, Public Service, Inclusivity, Indian Culture & Heritage, Digital Innovation, Friendly Personality, Nationwide Connectivity",
+    "status": "completed",
+    "error": null,
+    "refinement_notes": [],
+    "metadata": {
+      "source": "pollinations.ai",
+      "url": "https://image.pollinations.ai/prompt/a%20friendly%20india%20post%20mascot%20representing%20trust%20&%20reliability,%20indian%20culture%20and%20digital%20innovation,%201024x1024%20resolution,%20square%20format,%20modern%20indian%20cartoon?width=1024&height=1024&seed=421175&model=flux",
+      "note": "FREE generation - no API key required"
+    }
+  },
+  "quality_report": {
+    "id": "19c03482-5055-4322-8455-b08cd4c3b196",
+    "overall_score": 0.7345905733661018,
+    "passed": "True",
+    "tier_used": "ml+ai",
+    "ml_checks": [
+      {
+        "check_type": "prompt_alignment",
+        "score": 0.6510068029165268,
+        "status": "passed",
+        "details": {
+          "similarity_score": 0.3020136058330536
+        },
+        "issues": [],
+        "confidence": 0.6510068029165268
+      },
+      {
+        "check_type": "artifact_detection",
+        "score": 0.9939653057972441,
+        "status": "passed",
+        "details": {
+          "edge_density": 0.019499037000868056,
+          "blur_score": 69.05132185508795,
+          "anomaly_score": 0.006034694202755968
+        },
+        "issues": [],
+        "confidence": 0.9879306115944881
+      },
+      {
+        "check_type": "composition",
+        "score": 0.02225,
+        "status": "inconclusive",
+        "details": {
+          "composition_score": 0.02225
+        },
+        "issues": [],
+        "confidence": 0.5
+      },
+      {
+        "check_type": "technical_quality",
+        "score": 1.0,
+        "status": "passed",
+        "details": {
+          "image_info": {
+            "width": 768,
+            "height": 768,
+            "format": "JPEG",
+            "mode": "RGB",
+            "size_bytes": 53358
+          },
+          "aspect_ratio": 1.0,
+          "blur_score": 69.05132185508795
+        },
+        "issues": [],
+        "confidence": 1.0
+      }
+    ],
+    "ai_checks": [
+      {
+        "check_type": "ai_quality",
+        "score": 0.7,
+        "status": "passed",
+        "details": {
+          "original_check": "composition",
+          "ml_score": 0.02225,
+          "ai_score": 0.7,
+          "prompt": "Analyze: Composition. ML score: 0.02. Details: {\"composition_score\": 0.02225}. Image prompt: a friendly india post mascot representing trust & reliability, indian culture and digital innovation, 1024x1024 resolution, square format, modern indian cartoon style in cartoon, modern, indian, modern indian style Characteristics to include: Trust & Reliability, Public Service, Inclusivity, Indian Culture & Heritage, Digital Innovation, Friendly Personality, Nationwide Connectivity. Rate the alignment from 0.0 to 1.0."
+        },
+        "issues": [
+          "AI resolved composition: score 0.70"
+        ],
+        "tokens_used": 1,
+        "model_used": "omniroute:free-fast vision auto"
+      }
+    ],
+    "tokens_consumed": 1,
+    "refinement_notes": [],
+    "iteration_count": 0,
+    "warnings": [],
+    "errors": []
+  },
+  "task_id": "cf9af13e-20b3-4b0b-a431-aa0f7278c264"
+}

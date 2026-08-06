@@ -1,0 +1,40 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "recraft": {
+      "type": "remote",
+      "url": "https://mcp.recraft.ai/mcp",
+      "enabled": true
+    },
+    "ideogram": {
+      "type": "remote",
+      "url": "https://mcp.ideogram.ai/mcp",
+      "enabled": true
+    },
+    "canva": {
+      "type": "remote",
+      "url": "https://mcp.canva.com/mcp",
+      "enabled": true
+    },
+    "freepik": {
+      "type": "remote",
+      "url": "https://mcp.magnific.com",
+      "enabled": true
+    },
+    "vectorizer-ai": {
+      "type": "local",
+      "command": [
+        "uv",
+        "run",
+        "--directory",
+        "~/vectorizer-ai-mcp",
+        "vectorizer-ai-mcp"
+      ],
+      "enabled": false,
+      "environment": {
+        "VECTORIZER_API_ID": "{env:VECTORIZER_API_ID}",
+        "VECTORIZER_API_SECRET": "{env:VECTORIZER_API_SECRET}"
+      }
+    }
+  }
+}
