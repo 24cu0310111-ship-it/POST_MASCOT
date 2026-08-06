@@ -54,6 +54,7 @@ class BackendRegistry:
         from backends.mcp_backend import MCPBackend
         from backends.pollinations_backend import PollinationsBackend
         from backends.web_api_backend import WebAPIBackend
+        from backends.ai_providers import OpencodeBackend, OmnirouteBackend, OmnirouteOrgBackend
         
         # Initialize backend instances
         self.backends = {
@@ -61,7 +62,10 @@ class BackendRegistry:
             "cli": CLIBackend(),
             "web_api": WebAPIBackend(),
             "pollinations": PollinationsBackend(),
-            "local": LocalBackend()
+            "local": LocalBackend(),
+            "opencode": OpencodeBackend(),
+            "omniroute": OmnirouteBackend(),
+            "omniroute-org": OmnirouteOrgBackend()
         }
     
     def _load_configurations(self):

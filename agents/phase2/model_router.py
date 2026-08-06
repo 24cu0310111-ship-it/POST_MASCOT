@@ -158,6 +158,45 @@ class ModelRouter:
             available=True,
             needs_api_key=False
         )
+        
+        # Opencode CLI Model
+        self.backend_candidates["opencode"] = BackendCandidate(
+            name="opencode",
+            backend_type=BackendType.CLI_TOOL,
+            priority=0.85,
+            cost=0.2,
+            speed=0.85,
+            quality=0.9,
+            supports_task=False,
+            available=True,
+            needs_api_key=True
+        )
+        
+        # Omniroute CLI Model
+        self.backend_candidates["omniroute"] = BackendCandidate(
+            name="omniroute",
+            backend_type=BackendType.CLI_TOOL,
+            priority=0.85,
+            cost=0.2,
+            speed=0.9,
+            quality=0.85,
+            supports_task=False,
+            available=True,
+            needs_api_key=True
+        )
+
+        # Omniroute-Org CLI Model
+        self.backend_candidates["omniroute-org"] = BackendCandidate(
+            name="omniroute-org",
+            backend_type=BackendType.CLI_TOOL,
+            priority=0.85,
+            cost=0.2,
+            speed=0.9,
+            quality=0.85,
+            supports_task=False,
+            available=True,
+            needs_api_key=True
+        )
     
     def _initialize_task_capabilities(self):
         """Initialize task capabilities for each backend type."""

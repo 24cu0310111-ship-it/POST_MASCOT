@@ -127,7 +127,9 @@ class CreatorAgent:
                     subject=f"{analyzed.subject} variant {i+1}",
                     style=analyzed.style,
                     constraints=analyzed.constraints,
-                    references=analyzed.references
+                    references=analyzed.references,
+                    context_score=analyzed.context_score,
+                    missing_fields=analyzed.missing_fields
                 )
             else:
                 modified_analyzed = analyzed

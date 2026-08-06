@@ -159,6 +159,28 @@ class MAOrchestrator:
                 analyzed
             )
             
+            if result.status != GenerationStatus.COMPLETED:
+                clarification = ClarificationRequest(
+                    missing_fields=["api_key"],
+                    questions=[
+                        f"Generation failed via {result.backend_used or 'selected backends'}.",
+                        "Would you like to provide a free or limited access API key to continue? (e.g. OPENCODE_API_KEY)"
+                    ],
+                    suggestions=[
+                        "Provide a valid API key for a supported backend",
+                        "Or manually represent the graphical design"
+                    ]
+                )
+                total_time_ms = int((time.time() - start_time) * 1000)
+                return FinalResult(
+                    success=False,
+                    analyzed_input=analyzed,
+                    generation_result=result,
+                    clarification_request=clarification,
+                    error=result.error or "Generation failed",
+                    total_time_ms=total_time_ms
+                )
+            
             # Final user review gate
             final_result = await self.present_to_user(result, quality)
             
@@ -255,10 +277,22 @@ class MAOrchestrator:
             result = await self.phase2.generate(analyzed)
             
             if result.status != GenerationStatus.COMPLETED:
+                clarification = ClarificationRequest(
+                    missing_fields=["api_key"],
+                    questions=[
+                        f"Generation failed via {result.backend_used or 'selected backends'}.",
+                        "Would you like to provide a free or limited access API key to continue? (e.g. OPENCODE_API_KEY)"
+                    ],
+                    suggestions=[
+                        "Provide a valid API key for a supported backend",
+                        "Or manually represent the graphical design"
+                    ]
+                )
                 return FinalResult(
                     success=False,
                     analyzed_input=analyzed,
                     generation_result=result,
+                    clarification_request=clarification,
                     error=result.error or "Generation failed"
                 )
             

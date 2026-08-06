@@ -6,6 +6,7 @@ from .cli_backend import CLIBackend
 from .web_api_backend import WebAPIBackend
 from .local_backend import LocalBackend
 from .pollinations_backend import PollinationsBackend
+from .ai_providers import OpencodeBackend, OmnirouteBackend, OmnirouteOrgBackend
 
 __all__ = [
     "BaseBackend",
@@ -15,4 +16,7 @@ __all__ = [
     "WebAPIBackend",
     "LocalBackend",
     "PollinationsBackend",
+    "OpencodeBackend",
+    "OmnirouteBackend",
+    "OmnirouteOrgBackend",
 ]
